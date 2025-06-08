@@ -56,4 +56,9 @@ if __name__ == "__main__":
     # data = {"t": [0, ...], "x": [1, ...], "y": [1, ...]}
 ```
 
+You also might want to use some tracking Iterator, like tqdm:
+```python
+data = solver.calculate(step=10 ** -6, _iter=tqdm.tqdm(range(5 * 10 ** 6)))
+```
+
 The MIT License Copyright @ 2025 belinmikh
