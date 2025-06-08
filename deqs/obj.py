@@ -1,7 +1,8 @@
 from collections.abc import Callable
 from typing import Iterable
 
-from . import derivative, calculate
+from .tools import derivative
+from .calculator import calculate
 from .methods import runge_kutta
 from .types import Func, Funcs, Data, Method
 
